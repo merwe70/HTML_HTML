@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ders_29 || HTML Input-Checkbox&Radio&Range</title>
+</head>
+<body>
+
+    <form method="post" action="#">
+
+        Bildiğiniz diller: <br />
+        <input type="checkbox" name="dil" id="ing" /><label for="ing">İngilizce</label> <br />
+        <input type="checkbox" name="dil" id="arp" />Arapça <br />
+        <input type="checkbox" name="dil" id="frs" /> Farsça <br /><!--direkt yazmak yerine label atarsak yazının üzerine keldiğimizde de 
+                                                                       tikleyebiliriz-->
+        <br />
+
+        Cinsiyetiniz:<br />
+        <input type="radio" name="cinsiyet" id="kız" value="kız" /><label for="kız">Kız</label> <br /><!-- value js php gibi ortamlarda döndürdüğümüz değer.-->
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek" />Erkek <br /> <!--2 radio button un nameleri aynı olmak zorund birini seçmek için yoksa farklı algılayıp çoklu seçim yapılabilir-->
+     
+        <input type="range" min="0" max="100" value="20" />
+        <br />
+        <br />
+        <input type="text" />
+        <br />
+        
+        <input type="password" />
+        <br />
+
+        <input type="submit" value="submit" />
+        
+
+        <input type="reset" value="reset" /><!--value ler butonların üzerinde çıkan yazıyı temsil ediyor. formun dışında yazarsak çalışmaz bunlar. Submit kaydetmek reset silmek-->
+
+        <br />
+        <br />
+
+        <input type="button" value="Buton" onclick="alert('Butona tıklandı')" /> <!--Bu butona js ile müdehale edilebilir.Burda alert ile mesaj verdirdik-->
+        <button>Tıkla</button><!--Sadece tıklanma özelliği var JS kodları ile müdehale edilir-->
+        <br />
+        <select name="dil" size="2" multiple>
+
+            <option value="ing">İngilizce</option>
+            <option value="arp" selected>Arapça</option>
+            <option value="itl">İtalyanca</option>
+            <option value="alm">Almanca</option>
+            <!--açılabilir menü oluşturduk ilk başta hangisi gözüksün istiyor isek selected yazıyoruz. size değeri verip mesela 2 dersek 2 li olarak gözükür
+                çoklu seçim yapabilmek için multiple özelliğini yazıp ctrl ve shift tuşu ile çoklu seçim yapıyoruz-->
+        </select>
+
+        <select>
+            <optgroup label="Sayısal Dersler">
+                <option>Matematik</option>
+                <option>Fizik</option>
+            </optgroup>
+            <optgroup label="Sözel Dersler">
+                <option>Edebiyat</option>
+                <option>Tarih</option>
+            </optgroup>
+
+        </select>
+
+    <br />
+
+    <textarea cols="60" rows="20">Mesajınızı buraya yazınız</textarea><!--60 sütun ve 20 satırlık bir alan oluşturdu bize-->
+    <br />
+
+    <input list="diller" />
+    <datalist id="diller">
+        <option value="HTML">
+        <option value="JavaScript">
+        <option value="C#">
+        <option value="Python">
+
+    </datalist><!--alttakiler öneri olarak görüntülenenler-->
+        
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ders_18 || Html Attributes</title>
+
+    <style>
+        div{
+            
+            border:2px solid black;
+            height:100px;
+        }
+        
+        #dv{
+            border:2px solid red;
+            height:100px;
+        }
+
+        #div1{
+            border:2px solid black;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="http://www.google.com">Google</a>
+    <p title="p etiketi">Paragraf</p>
+    <br />
+
+    <!--<div id="div1" class="class1"></div>
+    <div id="div2" class="class1"></div>
+    <div id="div3" class="class2"></div>-->
+
+    <div></div>
+    <div id="dv"></div>
+    <div></div>
+
+    <br/>
+
+    <div id="div1"></div> <!-- hepsine aynı id verince site dinamik hale getirilince hata verir. O yüzden aynı
+                              id ler verilmez-->
+    <div id="div1"></div>
+    <div id="div1"></div>
+
+    <script>
+
+        document.getElementById("div1").innerText = "HTML";
+
+    </script>
+
+</body>
+</html>

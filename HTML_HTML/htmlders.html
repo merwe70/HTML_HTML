@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Namenin içine adlandırdığımızı content ile özellik veriyoruz
+    name verdiğimiz isim benim görüş alanım dedik DEVİCE-WİDTH dediğimiz özellik benim sitem telefonda açılıyorsa genişliği ona göre olsun tablet 
+     veya pc de açılıyorsa ona göre ayarla dedik. initial-scale de başlangıç ölçeği demek -->
+    <meta name="keywords" content="HTML,CSS,JAVASCRİPT"/> <!--Arama motoru sitenin kywords üne bakıyor bizimkinde html css veya js  yazıyor kullanıcının önüne ona göre çıkarıyor-->
+    <meta name="description" content="Html Eğitim seti"/> <!--Discription tanımlama demek yani benim tanımlamamın içeriğini şu yap diyoruz sitenin adını yazınca altta çıkan tanımlama-->
+    <meta name="author" content="Merve Dürül"/> <!--Yazarın adını veriyoruz burada-->
+    <link rel="stylesheet" type="text/css" href="ders.css"/> <!--rel ne dosyası olduğunu tanıtmamızı istiyor stylesheet diyerek css dosyası olduğunu belirtiyoruz.
+                                                                 type türü demek href ile de yolunu gösteriyoruz-->
+    <script src="dosya.js"></script> <!--Js içinde yazılanları html de kullanabileceğim demek -->
+    <title>Başlık</title><!--Üst sekmede görünen başlığı verir-->
+    <link rel="shortcut icon" href="zeka.ico"/>
+</head>
+<body>
+    <header style="border:1px solid red; width:100%; height:50%;">
+        Anasayfa Hakkımızda Kariyer İletişim
+    </header>
+
+    <div style="border:1px solid black; width:100%; height:600%;">
+        Web sitesi hakkında yazılar, resimler vs.
+    </div>
+    <!--Bu başlıklar sitemiz hakkında içerik sağlar.Arama motorlarına bu başlıkları iletiriz.Arama motoruna 
+        yazılanlar h1 ve h6 ile ilişkilendirip ona göre arama sonuçlarında sayfamızı görüntülüyor. Bu elementleri
+        yazı büyütmek için kullanılmamalı arama motorunda çıkardığı için hoşsonuç olmaz.Bunlar sadece temel başlıklarda 
+        kullanılmalı.
+        h1 : 2em
+        h2 : 1.5em
+        h3 : 1.17em
+        h4 : 1em
+        h5 : 0.83em
+        h6 : 0.67em   
+        -->
+    <h1 style="color:red; text-align:center; " >Başlık1</h1> <!--Style css müdehalesi yapacağım demek -->
+    <hr/> <!--Başlığın altına çizgi atar -->
+    <h2>Başlık2</h2>
+    <h3>Başlık3</h3>
+    <h4>Başlık4</h4>
+    <h5>Başlık5</h5>
+    <h6>Başlık6</h6>
+
+    <p>
+        Merve Dürül
+        Merve Dürül
+    </p>
+
+    <pre> <!--Paragrafa göre daha ince bir punto ile ve alt alta yazılıyor, ayrıca boşluk duyarlılığı da var.-->
+        Merve Dürül
+        Merve Dürül
+    </pre>
+
+    <div style="border:1px solid black; width:25%; height:300px;"><!--Div birbiri ile ilişkili durumlarda onları bir arada tutmak
+                                                                  için kullanılır.Genişlik ve yükseklik hem % hem de px olarak verilebilir.
+                                                                     div içine div yazılabilir.Çok kullanışlıdır-->
+        <h1>HTML öğreniyorum</h1>
+        <p> Html Giriş</p>
+
+        <div style="border:1px solid red; width:100px; height:150px">
+
+        </div>
+
+    </div>
+    <footer style="border:1px solid red; width:100%; height:50%; text-align:center">
+        Copyright &copy; by Mervedurul
+    </footer>
+
+</body>
+</html>

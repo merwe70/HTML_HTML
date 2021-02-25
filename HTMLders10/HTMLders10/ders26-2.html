@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ders_26 || HTML Input-Email&Tel&Number&Search</title>
+</head>
+<body>
+
+    <form>
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" /><br /> <!-- @ işaretinin varlığını sorgular-->
+        <label for=" tel">Telefon</label><br />
+        <input type="tel" id="tel" name="tel" pattern="[0-9](11)" /><br /> <!-- pattern alanında köşeli parantez içine yazdığımız hangi sayıları
+                                                                               kapsadığı, parantez içine yazdığımız kaç adet sayıdan oluşacağını belirliyoruz-->
+
+
+        <br />
+        <input type="number" min="1" max="5" /><br />
+
+        <input type="search" /> <!--arama yapma alanı tekst ten farkı kenarda çarpı çıkması --> 
+        <br /><br />
+
+        <button>Kaydet</button>
+    </form>
+
+</body>
+</html>
